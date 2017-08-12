@@ -28,8 +28,8 @@ function register () {
   request({
     method: 'POST',
     url: process.env.REGURL,
-    json: config.filter(project => (typeof(project.values) === 'object' && project.values.length > 0))
-    .map((project, idx) => { return {title: project.title, url: '/'+idx}; })
+    json: {widgets: config.filter(project => (typeof(project.values) === 'object' && project.values.length > 0))
+    .map((project, idx) => { return {title: project.title, url: '/'+idx}; })}
   }, (err, res) => { if (err) console.log(err); });
 }
 
