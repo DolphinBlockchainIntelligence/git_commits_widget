@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Waves project commit activity",
+    "git": "wavesplatform/Waves",
+    "color:": "#ff7f0e",
+    "area": true
+  },
+  {
+    "title": "Monero project commit activity",
+    "git": "monero-project/monero",
+    "color:": "#2ca02c",
+    "area": true
+  }
+]
